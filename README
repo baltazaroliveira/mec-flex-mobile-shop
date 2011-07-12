@@ -1,1 +1,27 @@
-Welcome
+A detailed blog post on this project is located here.
+
+http://www.x.com/blogs/Sidney/2011/07/12/integrating-paypal-mobile-express-checkout-with-flex-mobile-components
+
+Introduction
+This project was created to demonstrate how to use PayPal Mobile Express Checkout with Adobe's new mobile flex components. There are two folders, the FlexShopper folder contains the FlashBuilder project while the PayPalFex folder contains the store data and image assets along with the PHP code for communicating with PayPal's servers.
+
+1. Import the FlexShopper project into your FlashBuilder workspace.
+2. Move the PayPalFlex folder into your web root. (i.e. localhost)
+
+If you place the server-side code (PayPalFlex folder) in any location other than localhost, you need to update the domain path in the following locations.
+
+/PayPalFlex/assets/product.json
+/FlexShopper/src/views/cart.mxml
+/FlexShopper/src/services/products/_Super_Products.as
+
+Deploying to Mobile Device
+You'll need to update your domain path when you deploy to a mobile device. I uploaded the PayPalFlex folder to my web host and pointed to that domain. That allowed me to distribute the APK file to anyone in the office.
+
+Documentation
+Additional documentation for PayPal Express Checkout can be found here
+https://www.x.com/community/ppx/documentation#ec
+
+Acknowledgments
+The server-side code for this project is a derivative of Miti Pricope's code written for an article on Adobe developer connection. The article walks through integrating PayPal Express Checkout with Flex and Adobe AIR and can be found here (http://www.adobe.com/devnet/flex/articles/flex_paypal.html).
+
+The StageWebView component for this project is a derivative of Sonke Rohde.  His blog post explaining the component can be found here. (http://soenkerohde.com/2010/11/air-mobile-stagewebview-uicomponent/)
